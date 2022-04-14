@@ -9,12 +9,12 @@ const myFunc = (arr) => {
         for (let i = 0; i < len/2; i++){
             // Converting to lower case incase it's a match between a capital letter and a small letter.
             if (element[i].toLowerCase() !== element[len - 1 - i].toLowerCase()){
-                // If it isn't a palindrome, return true.
+                // If it isn't a palindrome, return false.
                 return false;
             }
                 
             else{
-                //If it is a palindrome, return false.
+                //If it is a palindrome, return true.
                 return true;
             }
         }
