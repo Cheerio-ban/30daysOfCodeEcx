@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--Pale-blue);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--Desaturated-blue);
+}
+
+h1{
+    color: var(--Dark-blue);
+}
+
+.container > img {
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+button{
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.body-image {
+    background-repeat: no-repeat;
+    background-position: center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-change{
+    background-color: transparent;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+
+}
+.btn-primary{
+    background-color: var(--Bright-blue);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+}
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.btn-secondary{
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+}
+
+.btn-secondary:hover{
+    color: var(--Dark-blue);
+}
+
+.container{
+    background-color: #fff;
+    width: 340px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%), 0.15;
+    padding-bottom: 20px;
+
+}
+
+.container > h1{
+    margin: 10px 0;
+}
+
+.container p.desc{
+    padding: 0 30px;
+}
+
+.container .subsection{
+    margin: 30px auto;
+    background-color: var(--Very-pale-blue);
+    width: 90%;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.container .subsection article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .subsection article img{
+    margin-right: 20px;
+}
+
+.container .subsection article p {
+    color: var(--Dark-blue);
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+.attribution a {
+     color: hsl(228, 45%, 44%);
+     }
+
+
+@media (min-width: 700px) {
+    .body-image{
+        background: url("./images/pattern-background-desktop.svg") no-repeat center/cover;
+        height: 50vh;
+    }
+    .container{
+        width: 340px;
+    }
+}
